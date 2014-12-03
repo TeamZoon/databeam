@@ -27,6 +27,7 @@
     "mongodb": "~2.0"
   },
   "devDependencies": {
+    "istanbul": "hbpoison/istanbul",
     "jshint": "^2.5.10",
     "mocha": "^2.0.1",
     "should": "^4.3.0",
