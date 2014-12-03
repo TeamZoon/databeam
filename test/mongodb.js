@@ -12,7 +12,7 @@ describe('MongoDataBeam', () => {
 	let mdb = null;
 	let collection = null;
 	before((done) => {
-		mongodb.MongoClient.connect('mongodb://localhost:27017/test', (err, db) => {
+		mongodb.MongoClient.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/test', (err, db) => {
 			if (err) done(err);
 			mdb = db;
 			collection = mdb.collection('MongoDataBeam');
