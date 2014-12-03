@@ -1,5 +1,4 @@
 SRC = lib/*.js
-
 NODE_HARMONY = node --use-strict $(node --v8-options | grep harm | awk '{print $1}' | xargs)
 
 DIR ?= $(dir $(lastword $(MAKEFILE_LIST)))
